@@ -2,6 +2,7 @@
 
 一个用 nRF52832 做的简易 2.4GHz 频谱分析 RGB 灯带（用作装饰或玩具）
 项目很大部份基于：https://github.com/hb020/pixlAnalyzer （感谢[hb020](https://github.com/hb020)和[atc1441](https://github.com/atc1441)）
+
 灵感来源于：https://youtu.be/moBCOEiqiPs?si=ToIqUjC3-g4FUg77
 
 ## 版本历史

@@ -4,6 +4,7 @@
 
 A simple 2.4GHz Spectrum Analyzer RGB Strip Light based on nRF52832 (used as decoration or toy)
 Project largely based on: https://github.com/hb020/pixlAnalyzer (Thanks to [hb020](https://github.com/hb020) and [atc1441](https://github.com/atc1441))
+
 Inspired by: https://youtu.be/moBCOEiqiPs?si=ToIqUjC3-g4FUg77
 
 ![preview](assets/Preview.png)
