@@ -1,0 +1,22 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug NRF52 (Cortex-Debug)",
+            "type": "cortex-debug",     // <--- 核心改变：使用专门的嵌入式调试类型
+            "request": "launch",
+            "armToolchainPath": "/Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin", 
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}/firmware",
+            "executable": "${workspaceFolder}/firmware/build/SARGB_52832.out",
+            "device": "nRF52832_xxAA",  // <--- 指定芯片型号
+            "configFiles": [
+                "interface/ultralink-nrf52.cfg" // 使用你之前新建的配置文件
+            ],
+            // "runToEntryPoint": "main",  // <--- 自动复位并运行到 main 函数停下
+            // "svdFile": "${workspaceFolder}/firmware/nrf52.svd", // (可选) 如果你有SVD文件，可以在调试时看寄存器
+            "preLaunchTask": "Build SARGB" // 调试前自动编译
+        }
+    ]
+}

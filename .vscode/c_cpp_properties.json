@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/firmware",
+                "${workspaceFolder}/firmware/sdk/components/softdevice/s112/headers",
+                "${workspaceFolder}/firmware/sdk/components/libraries/util",
+                "${workspaceFolder}/firmware/sdk/modules/nrfx",
+                "${workspaceFolder}/firmware/sdk/integration/nrfx",
+                "${workspaceFolder}/firmware/sdk/components/libraries/delay",
+                "${workspaceFolder}/firmware/sdk/components/boards",
+                "${workspaceFolder}/firmware/sdk/modules/nrfx/hal",
+                "${workspaceFolder}/firmware/sdk/components/toolchain/cmsis/include",
+                "${workspaceFolder}/firmware/sdk/modules/nrfx/mdk"
+            ],
+            "defines": [
+                "CONFIG_GPIO_AS_PINRESET",
+                "FLOAT_ABI_HARD",
+                "NRF52",
+                "NRF52832_XXAA",
+                "NRF52_PAN_74",
+                "BOARD_CUSTOM"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc",
+            "intelliSenseMode": "macos-gcc-arm",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "${workspaceFolder}"
+                ]
+            },
+            "cStandard": "gnu17"
+        }
+    ],
+    "version": 4
+}
