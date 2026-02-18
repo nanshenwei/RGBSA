@@ -1,32 +1,30 @@
-# RGB Spectrum Analyzer
+# RGB 频谱分析仪
 
-[中文版](README_CN.md)
+一个用 nRF52832 做的简易 2.4GHz 频谱分析 RGB 灯带（用作装饰或玩具）
+项目很大部份基于：https://github.com/hb020/pixlAnalyzer （感谢[hb020](https://github.com/hb020)和[atc1441](https://github.com/atc1441)）
+灵感来源于：https://youtu.be/moBCOEiqiPs?si=ToIqUjC3-g4FUg77
 
-A simple 2.4GHz Spectrum Analyzer RGB Strip Light based on nRF52832 (used as decoration or toy)
-Project largely based on: https://github.com/hb020/pixlAnalyzer (Thanks to [hb020](https://github.com/hb020) and [atc1441](https://github.com/atc1441))
-Inspired by: https://youtu.be/moBCOEiqiPs?si=ToIqUjC3-g4FUg77
+## 版本历史
 
-## Version history
+2026-02-19: 首次发布
 
-2026-02-19: First release
+## 烧录
 
-## Flashing
+使用SWD接口
 
-Use SWD interface
+## 编译
 
-## Compiling
-
-It is currently made for MacOS, some changes might be needed to run on Linux and Windows.
-You need to have installed:
+它现在是给 MacOS 用的，要想在 Linux和 Windows上跑可能需要做些改动。
+你需要先装好：
 
 * `make`
 * `gcc-arm-none-eabi`
-  * Depending on your OS, set the path to the gcc's bin folder in the `/RGBSA/firmware/sdk/components/toolchain/gcc/Makefile.posix` or `.../Makefile.windows` file.
-  * Example for MacOS: `GNU_INSTALL_ROOT ?= /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/`
+  * 根据你的操作系统，在 `/RGBSA/firmware/sdk/components/toolchain/gcc/Makefile.posix` 或 `.../Makefile.windows` 文件中设置 gcc 的 bin 目录路径。
+  * 比如 MacOS: `GNU_INSTALL_ROOT ?= /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/`
 
-## Frequency range and channels
+## 频率范围和信道
 
-The 2.4GHz ISM band is divided into several channels, different protocols use different channels. Here are some common channel allocations:
+2.4GHz 的 ISM 频段被分成好几条信道，不同协议会用到不同的信道。下面是一些常见的信道分配：
 
 | Center Frequency<br>(MHz) | IEEE 802.15.4<br>channel, 5MHz wide | 802.11b/g/n WiFi<br>channel, 22/20/40MHz wide | BLE<br>channel, 2MHz wide |
 |:----:|:--:|:--:|:--:|
@@ -121,7 +119,7 @@ The 2.4GHz ISM band is divided into several channels, different protocols use di
 
 ![ISM band channels](ism_band_channels.png)
 
-## SDK links for the nRF52832
+## nRF52832的SDK链接
 
 * [nRF52832 Product Specification v1.9](https://docs.nordicsemi.com/bundle/nRF52832_PS_v1.9/resource/nRF52832_PS_v1.9.pdf)
 * [RADIO — 2.4 GHz Radio](https://docs.nordicsemi.com/bundle/ps_nrf52832/page/radio.html)
