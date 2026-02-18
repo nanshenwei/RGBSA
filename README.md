@@ -6,9 +6,15 @@ A simple 2.4GHz Spectrum Analyzer RGB Strip Light based on nRF52832 (used as dec
 Project largely based on: https://github.com/hb020/pixlAnalyzer (Thanks to [hb020](https://github.com/hb020) and [atc1441](https://github.com/atc1441))
 Inspired by: https://youtu.be/moBCOEiqiPs?si=ToIqUjC3-g4FUg77
 
+![preview](assets/Preview.png)
+
 ## Version history
 
 2026-02-19: First release
+
+## Development
+
+You can use VS Code with OpenOCD for debugging. The `.vscode/` directory is already configured, but you may need to adjust it according to your platform and system.
 
 ## Flashing
 
@@ -119,7 +125,7 @@ The 2.4GHz ISM band is divided into several channels, different protocols use di
 | 2486 |    |    |    |
 | 2487 |    |    |    |
 
-![ISM band channels](ism_band_channels.png)
+![ISM band channels](assets/ism_band_channels.png)
 
 ## SDK links for the nRF52832
 
