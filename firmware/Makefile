@@ -1,5 +1,5 @@
-PROJECT_NAME     := SARGB
-TARGETS          := SARGB_52832
+PROJECT_NAME     := RGBSA
+TARGETS          := RGBSA_52832
 OUTPUT_DIRECTORY := build
 SDK_ROOT := sdk
 
@@ -88,6 +88,6 @@ $(foreach target, $(TARGETS), $(call define_target, $(target)))
 
 flash: default
 	@echo "------------------------------------------------"
-	@echo "Flashing Target: SARGB using OpenOCD"
+	@echo "Flashing Target: RGBSA using OpenOCD"
 	@echo "------------------------------------------------"
-	openocd -f interface/ultralink-NRF52.cfg -c "init; halt; nrf52_flash_bank_erase 0; flash write_image $(OUTPUT_DIRECTORY)/SARGB_52832.hex; reset; exit"
+	openocd -f interface/ultralink-NRF52.cfg -c "init; halt; nrf52_flash_bank_erase 0; flash write_image $(OUTPUT_DIRECTORY)/RGBSA_52832.hex; reset; exit"

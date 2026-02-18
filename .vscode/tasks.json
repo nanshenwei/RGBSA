@@ -2,11 +2,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build SARGB",
+            "label": "Build RGBSA",
             "type": "shell",
             "command": "make",
             "args": [
-                "SARGB_52832"
+                "RGBSA_52832"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/firmware"
@@ -30,18 +30,18 @@
             "problemMatcher": []
         },
         {
-            "label": "Flash SARGB",
+            "label": "Flash RGBSA",
             "type": "shell",
             "command": "openocd",
             "args": [
                 "-f", "interface/ultralink-NRF52.cfg",
                 "-f", "target/nrf52.cfg",
-                "-c", "init; halt; nrf52_flash_bank_erase 0; flash write_image build/SARGB_52832.hex; reset; exit"
+                "-c", "init; halt; nrf52_flash_bank_erase 0; flash write_image build/RGBSA_52832.hex; reset; exit"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/firmware"
             },
-            "dependsOn": "Build SARGB",
+            "dependsOn": "Build RGBSA",
             "problemMatcher": []
         }
     ]
