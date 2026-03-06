@@ -1,0 +1,1 @@
+build/RGBSA_52832/gcc_startup_nrf52.S.o build/RGBSA_52832/system_nrf52.c.o build/RGBSA_52832/boards.c.o build/RGBSA_52832/main.c.o -lc -lnosys -lm
